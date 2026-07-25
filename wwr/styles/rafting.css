@@ -26,6 +26,12 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 16px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -38,6 +44,10 @@ section,
 artcle {
     margin: 16px;
     padding: 8px;
+}
+
+section {
+    background-color: var(--secondary-color);
 }
 
 .hero {
