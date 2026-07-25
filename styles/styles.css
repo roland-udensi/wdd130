@@ -1,3 +1,24 @@
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px
@@ -45,6 +66,12 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
 main img {
     width: 150px;
     height: auto;
@@ -52,6 +79,12 @@ main img {
     border: 3px solid #333;
     padding: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+main img {
+    /* you most likely will have other CSS declarations here */
+    float: right;
+
 }
 
 p {
