@@ -27,9 +27,44 @@ footer {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #6A4E77;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
     background-color: var(--primary-color);
     color: var(--accent2-color);
     padding: 16px;
+}
+
+header img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    background-color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #E0D6E8;
+    color: #6A4E77
 }
 
 h1,
@@ -85,4 +120,98 @@ section {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.history {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    text-align: center;
+    color: var(--primary-color--);
+    margin-bottom: 1rem;
+}
+
+.history img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history p {
+    line-height: 1.6;
+}
+
+.adventure {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+}
+
+.adventure h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #2E4A3B;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6A4E77;
+    margin-top: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    border-top: 1px solid
+}
+
+footer p {
+    margin: 0;
+    color: #2E4A3B;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
 }
