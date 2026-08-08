@@ -215,3 +215,10 @@ footer p {
     width: 32px;
     height: 32px;
 }
+
+.contact-form button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
