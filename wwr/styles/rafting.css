@@ -76,7 +76,7 @@ h2 {
 nav,
 p,
 section,
-artcle {
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -136,7 +136,7 @@ section {
 .history h2 {
     grid-column: 1/4;
     text-align: center;
-    color: var(--primary-color--);
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
@@ -194,7 +194,7 @@ footer {
     max-width: 1200px;
     margin: 2rem auto 0;
     padding: 1rem 2rem;
-    border-top: 1px solid
+    border-top: 1px solid #ccc;
 }
 
 footer p {
@@ -221,4 +221,46 @@ footer p {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trips-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.trips-container article {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.trips-container img {
+    width: 100%;
+    height: auto;
+}
+
+.trip-table {
+    margin-top: 2rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
 }
